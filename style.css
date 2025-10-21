@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0e0e0;
+}
+
+/* 🧮 Calculator Box */
+.calculator {
+  background: #e0e0e0;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 7px 7px 15px #bebebe, -7px -7px 15px #ffffff;
+  width: 320px;
+  max-width: 90vw; /* ✅ adjusts automatically on small screens */
+}
+
+/* 📟 Display Screen */
+#display {
+  width: 100%;
+  height: 60px;
+  border: none;
+  outline: none;
+  text-align: right;
+  padding: 10px 20px;
+  font-size: 2rem;
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+  color: #ff6600;
+  margin-bottom: 20px;
+}
+
+/* 🔘 Buttons Grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* 🔘 Individual Buttons */
+button {
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: #ff6600;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:active {
+  box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.op {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+#equal {
+  grid-column: span 2;
+  border-radius: 30px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 480px) {
+  .calculator {
+    width: 280px;
+    padding: 15px;
+    border-radius: 25px;
+  }
+
+  #display {
+    height: 50px;
+    font-size: 1.5rem;
+    padding: 8px 15px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  button {
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .calculator {
+    width: 240px;
+    padding: 10px;
+  }
+
+  button {
+    height: 45px;
+    font-size: 0.9rem;
+  }
+
+  #equal {
+    grid-column: span 2;
+  }
+}
