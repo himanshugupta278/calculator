@@ -48,3 +48,7 @@ Add scientific functions (sin, cos, log, etc.)
 
 # Live Demo
 [View Live Demo](https://your-username.github.io/Portfolio/)  
+
+# License
+
+This project is open source and available under the MIT License.
