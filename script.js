@@ -21,3 +21,20 @@ function calculate() {
     display.value = "Error";
   }
 }
+
+
+// ====== Dark/Light Mode Toggle Script ======
+const themeSwitch = document.getElementById('themeSwitch');
+
+if (themeSwitch) {
+  themeSwitch.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode', themeSwitch.checked);
+    localStorage.setItem('darkMode', themeSwitch.checked);
+  });
+
+  // Load saved mode
+  if (localStorage.getItem('darkMode') === 'true') {
+    themeSwitch.checked = true;
+    document.body.classList.add('dark-mode');
+  }
+}
