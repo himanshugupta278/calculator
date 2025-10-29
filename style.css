@@ -73,47 +73,6 @@ button:active {
   border-radius: 30px;
 }
 
-/* 📱 Responsive Design */
-@media (max-width: 480px) {
-  .calculator {
-    width: 280px;
-    padding: 15px;
-    border-radius: 25px;
-  }
-
-  #display {
-    height: 50px;
-    font-size: 1.5rem;
-    padding: 8px 15px;
-  }
-
-  .buttons {
-    gap: 10px;
-  }
-
-  button {
-    height: 50px;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 360px) {
-  .calculator {
-    width: 240px;
-    padding: 10px;
-  }
-
-  button {
-    height: 45px;
-    font-size: 0.9rem;
-  }
-
-  #equal {
-    grid-column: span 2;
-  }
-}
-
-
 /* ====== Dark/Light Mode Toggle ====== */
 .theme-toggle {
   position: absolute;
@@ -195,3 +154,46 @@ body.dark-mode button:hover {
   background-color: #555;
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
 }
+
+/*  Responsive Design */
+@media (max-width: 480px) {
+  .calculator {
+    width: 280px;
+    padding: 15px;
+    border-radius: 25px;
+  }
+
+  #display {
+    height: 50px;
+    font-size: 1.5rem;
+    padding: 8px 15px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  button {
+    height: 50px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .calculator {
+    width: 240px;
+    padding: 10px;
+  }
+
+  button {
+    height: 45px;
+    font-size: 0.9rem;
+  }
+
+  #equal {
+    grid-column: span 2;
+  }
+}
+
+
+
