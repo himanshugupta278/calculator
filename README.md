@@ -17,7 +17,7 @@ The design follows a neumorphism (soft UI) style, giving it a clean and elegant 
 
  # Screenshot
 
- ![Calculator Screenshot](image/calculator.png)
+ ![Calculator Screenshot](image/Calculator.png)
 
 
  # Project Structure
