@@ -47,7 +47,7 @@ Add keyboard input support
 Add scientific functions (sin, cos, log, etc.)
 
 # Live Demo
-[View Live Demo](https://your-username.github.io/Portfolio/)  
+[View Live Demo](https://himanshugupta278.github.io/calculator/)  
 
 # License
 
